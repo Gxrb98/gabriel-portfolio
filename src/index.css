@@ -9,7 +9,7 @@
     }
 
     .nav::after {
-        @apply content-[''] bg-[#FF0000] h-[2.5px] w-[0%] left-0 -bottom-[4px] rounded-xl absolute duration-300;
+        @apply content-[''] bg-[#FFA500] h-[2.5px] w-[0%] left-0 -bottom-[4px] rounded-xl absolute duration-300;
     }
 
     .nav:hover::after {
@@ -24,7 +24,7 @@
     }
 
     .img:hover {
-        background-color: #FF0000;
+        background-color: #FFA500;
         transition: 200ms;
         cursor: pointer;
     }
@@ -34,7 +34,7 @@
         display: inline-block;
         transition-property: background-color, color;
         transition-duration: 400ms;
-        background-color: #007BFF;
+        background-color: #FFA500;
         color: #ffffff;
         font-weight: 600;
         padding: 0.5rem 1rem;
@@ -46,7 +46,7 @@
 
     /* Estilos de hover para el botón */
     .btn:hover {
-        background-color: #0054D4;
+        background-color: #FF8C00;
         cursor: pointer;
         /* Cambia el color de fondo al pasar el cursor */
     }

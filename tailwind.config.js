@@ -18,7 +18,7 @@ export default {
       main: "#6e1414",
       white: "#f0f0f0",
       secondary: "#991C1C",
-      title: "#FF0000",
+      title: "#FFA500",
       blueHover: "#0054D4"
     },
     extend: {},

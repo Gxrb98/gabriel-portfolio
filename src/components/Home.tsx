@@ -4,7 +4,7 @@ const Home = () => {
 
     const { t } = useTranslation();
     return (
-        <div className='select-none flex h-screen justify-center font-bold items-center md:items-end md:justify-normal text-white overflow-x-hidden'>
+        <div className='select-none flex h-screen justify-center font-bold items-center md:items-end lg:items-center md:justify-normal text-white overflow-x-hidden'>
             <header className="font-sans my-1 md:text-left text-center">
 
                 <span className="hidden md:block md:show md:absolute md:text-8xl text-4xl z-10 md:left-[5rem] md:bottom-[5rem] font-bold">
@@ -14,7 +14,7 @@ const Home = () => {
                     <span className="md:text-5xl text-2xl">
                         <h1 className="md:my-3">{t('home.title1')}</h1>
                         <h1 className="md:my-3">{t('home.title2')}</h1>
-                        <h1 className="md:mt-3 uppercase">{t('home.title3')}</h1>
+                        <h1 className="md:mt-3 uppercase text-title">{t('home.title3')}</h1>
                     </span>
                 </div>
                 <h1 className="md:my-7 my-5 ">{t('home.title4')}</h1>
