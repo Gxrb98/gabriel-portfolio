@@ -3,14 +3,13 @@ import Home from './components/Home.tsx';
 import Nav from './components/Nav.tsx';
 import SideBar from './components/SideBar.tsx';
 import { useTranslation } from "react-i18next";
-import { Languages } from "./types/common";
 import Projects from './components/Projects.tsx';
 import Contact from './components/Contact.tsx';
 import Footer from './components/Footer.tsx';
 
 export const App = () => {
 
-  const languages: Languages = {
+  const languages: any = {
     en: { nativeName: 'English' },
     pt: { nativeName: 'Português' },
     es: { nativeName: 'Español' }
@@ -32,7 +31,7 @@ export const App = () => {
         </div>
         <Home />
         <SideBar />
-        <About lang={languages} />
+        <About />
         <Projects />
         <Contact />
         <Footer />

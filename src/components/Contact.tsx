@@ -8,7 +8,7 @@ import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 const Contact = () => {
     const [msj, setMsj] = useState('');
     const { t } = useTranslation();
-    const sendEmail = (e) => {
+    const sendEmail = (e: any) => {
         e.preventDefault()
         emailjs.sendForm('contact_service', 'contact_form', e.target, 'FeauU2-plERrxk0An')
             .then(function () {
@@ -17,6 +17,7 @@ const Contact = () => {
             }, function (error) {
                 setMsj('Something, went wrong');
                 setTimeout(() => setMsj(''), 2000);
+                console.log(error)
             });
         e.target.reset()
     }
