@@ -42,22 +42,22 @@ const About = () => {
                 <div className="md:text-6xl gap-10">
                     <h1 className="mt-2 md:mt-0 md:text-center text-xl text-title md:text-3xl font-bold">{t('about.title2')}</h1>
                     <div className="flex md:text-6xl gap-4 justify-center mt-2 md:gap-10 flex-wrap">
-                        <div className="bg-white md:p-3 p-1 rounded-lg ">
+                        <div className="bg-white md:p-3 p-1 rounded-lg transition-transform hover:-translate-y-1">
                             <FontAwesomeIcon icon={faHtml5} style={{ color: "#f07e36", }} />
                         </div>
-                        <div className="bg-white md:p-3 p-1 rounded-lg">
+                        <div className="bg-white md:p-3 p-1 rounded-lg transition-transform hover:-translate-y-1">
                             <FontAwesomeIcon icon={faCss3Alt} style={{ color: "#2d53e5", }} />
                         </div>
-                        <div className="bg-white md:p-3 p-1 rounded-lg">
+                        <div className="bg-white md:p-3 p-1 rounded-lg transition-transform hover:-translate-y-1">
                             <FontAwesomeIcon icon={faSquareJs} style={{ color: "#f7e025", }} />
                         </div>
-                        <div className="bg-white md:p-3 p-1 rounded-lg">
+                        <div className="bg-white md:p-3 p-1 rounded-lg transition-transform hover:-translate-y-1">
                             <FontAwesomeIcon icon={faReact} style={{ color: "#f7e025", }} />
                         </div>
-                        <div className="bg-white md:p-3 p-1 rounded-lg">
+                        <div className="bg-white md:p-3 p-1 rounded-lg transition-transform hover:-translate-y-1">
                             <FontAwesomeIcon icon={faVuejs} style={{ color: "#394d64", }} />
                         </div>
-                        <div className="bg-white md:p-3 p-1 rounded-lg">
+                        <div className="bg-white md:p-3 p-1 rounded-lg transition-transform hover:-translate-y-1">
                             <FontAwesomeIcon icon={faGitAlt} style={{ color: "#f05639", }} />
                         </div>
                     </div>
