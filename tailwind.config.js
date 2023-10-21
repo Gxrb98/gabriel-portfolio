@@ -15,11 +15,10 @@ export default {
       // => @media (min-width: 1440px) { ... }
     },
     colors: {
-      main: "#6e1414",
-      white: "#f0f0f0",
-      secondary: "#991C1C",
-      title: "#FFA500",
-      blueHover: "#0054D4"
+      main: "#151319",
+      white: "#F1F1EB",
+      secondary: "#271F25",
+      title: "#878D99",
     },
     extend: {},
   },
