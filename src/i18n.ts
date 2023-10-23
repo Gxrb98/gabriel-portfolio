@@ -54,7 +54,7 @@ i18n
                         title: "Contact me",
                         name: "Name",
                         message: "Message",
-                        email: "Or click on the text and send an Email"
+                        email: "Click on the text and send an Email"
                     },
                     footer: {
                         text: "All rights reserved",
@@ -98,7 +98,7 @@ i18n
                         title: "Envia-me uma mensagem",
                         name: "Nome",
                         message: "Mensagem",
-                        email: "Ou clique no texto e envie um e-mail"
+                        email: "Clique no texto e envie um e-mail"
                     },
                     footer: {
                         text: "Todos os direitos reservados",
@@ -142,7 +142,7 @@ i18n
                         title: "Contactame",
                         name: "Nombre",
                         message: "Mensaje",
-                        email: "O haga click en el texto y envie un Email"
+                        email: "Haga click en el texto y envie un Email"
                     },
                     footer: {
                         text: "Todos los derechos reservados",

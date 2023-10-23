@@ -30,7 +30,9 @@ export const App = () => {
           ))}
         </div>
         <Home />
-        <SideBar />
+        <div className='md:fixed flex md:flex-col md:top-[50vh] md:left-[95vw] md:text-2xl text-white absolute w-full justify-center top-[80vh] '>
+          <SideBar />
+        </div>
         <About />
         <Projects />
         <Contact />
