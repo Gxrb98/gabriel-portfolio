@@ -28,12 +28,12 @@ const Nav = () => {
         {/* <div>{t('greetings')}</div>
         <button></button> */}
         <ul className={`fixed font-sans flex md:justify-normal md:h-auto md:flex-row-reverse w-[100vw] 
-        md:gap-x-6 md:py-2 bg-main md:pr-9 h-full text-white justify-center flex-col items-center gap-y-6
+        md:gap-x-6 bg-main md:pr-[8rem] lg:py-3 h-full text-white justify-center flex-col items-center gap-y-6
         z-40 transition-all duration-500 ease-in bg-opacity-90 md:top-[0px] md:z-50 overflow-x-hidden
         ${show ? 'top-[0vh] bg-main' : 'top-[-100vh]  -z-20'}`}>
             {
                 links.map((link) => (
-                    <li key={link.name}><a href={link.link} className="md:nav">{link.name}</a></li>
+                    <li key={link.name} className="my-2"><a href={link.link} className="md:nav">{link.name}</a></li>
                 ))
             }
         </ul>

@@ -1,26 +1,27 @@
-import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 
 const Contact = () => {
-    const [msj, setMsj] = useState('');
     const { t } = useTranslation();
 
 
     const linkToCopy = 'gxrb98@gmail.com';
-
     const copyToClipboard = () => {
+        const message: Element = document.querySelector("#message")
         const textField = document.createElement('textarea');
         textField.innerText = linkToCopy;
         document.body.appendChild(textField);
         textField.select();
         document.execCommand('copy');
         textField.remove();
+        message.innerHTML = t('contact.copied')
+        setTimeout(() => message.innerHTML = "", 4000)
+
     };
     return (
-        <div id='contact' className='md:w-[100%]  md:h-[100%] md:flex  mt-8 text-white mx-[2rem]'>
+        <div id='contact' className='md:w-[100%]  md:h-[100%] md:flex  mt-20 text-white mx-[2rem] lg:mx-[8rem]'>
             <div>
                 <header>
                     <h1 className='md:text-3xl text-2xl font-bold text-title'>{t('contact.title')}</h1>
@@ -36,6 +37,7 @@ const Contact = () => {
 
                     <p onClick={copyToClipboard} className='md:text-3xl text-xl text-title hover:cursor-pointer font-bold'>gxrb98@gmail.com</p>
                 </div>
+                <span id='message' className='absolute'></span>
             </div>
 
 
