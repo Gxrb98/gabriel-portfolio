@@ -9,15 +9,19 @@ const Contact = () => {
 
     const linkToCopy = 'gxrb98@gmail.com';
     const copyToClipboard = () => {
-        const message: Element = document.querySelector("#message")
+        const message: HTMLElement | null = document.querySelector("#message")
         const textField = document.createElement('textarea');
         textField.innerText = linkToCopy;
         document.body.appendChild(textField);
         textField.select();
         document.execCommand('copy');
         textField.remove();
-        message.innerHTML = t('contact.copied')
-        setTimeout(() => message.innerHTML = "", 4000)
+        if (message !== null) {
+            message.innerHTML = t('contact.copied');
+            setTimeout(() => {
+                message.innerHTML = "";
+            }, 4000);
+        }
 
     };
     return (
