@@ -25,8 +25,8 @@ const Contact = () => {
 
     };
     return (
-        <div id='contact' className='md:w-[100%]  md:h-[100%] md:flex  mt-20 text-white mx-[2rem] lg:mx-[8rem]'>
-            <div>
+        <div id='contact' className='  md:h-[100%] md:flex  mt-20 text-white mx-[2rem] lg:mx-[8rem]'>
+            <div className="">
                 <header>
                     <h1 className='md:text-3xl text-2xl font-bold text-title'>{t('contact.title')}</h1>
                 </header>

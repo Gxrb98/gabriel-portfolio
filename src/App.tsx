@@ -22,7 +22,7 @@ export const App = () => {
 
       <Nav />
       <div className='md:mx-[3rem] '>
-        <div className='absolute top-[0px] p-0 md:gap-x-6 flex pr-4 gap-4 w-full md:w-0 justify-end md:justify-start md:z-50 md:my-2 z-40 mt-5 text-white'>
+        <div className='absolute lg:mt-8 p-0 md:gap-x-6 flex pr-4 gap-4 w-full md:w-0 justify-end md:justify-start lg:mx-[8rem] md:z-50 md:my-2 z-40 text-white'>
           {Object.keys(languages).map((lng) => (
             <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" className="nav" onClick={() => { i18n.changeLanguage(lng) }}>
               {languages[lng].nativeName}
