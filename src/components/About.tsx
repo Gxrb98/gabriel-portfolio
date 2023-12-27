@@ -33,7 +33,7 @@ const About = () => {
                 </div>
                 <div className="md:flex justify-center md:mt-7 mb-5 py-5">
                     <div className="md:text-6xl gap-10">
-                        <h1 className="mt-2 md:mt-0 md:text-center text-xl text-title md:text-3xl font-bold mb-5">{t('about.title2')}</h1>
+                        <h1 className="mt-2 md:mt-0 md:text-center text-xl text-title md:text-3xl font-bold mb-5 flex justify-center">{t('about.title2')}</h1>
                         <div className="flex md:text-6xl gap-4 justify-center mt-2 md:gap-10 flex-wrap">
                             <div className="bg-secondary p-1 rounded-lg transition-transform hover:-translate-y-1">
                                 <FontAwesomeIcon icon={faHtml5} style={{ color: "#f07e36", }} />
