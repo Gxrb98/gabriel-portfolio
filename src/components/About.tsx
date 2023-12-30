@@ -28,7 +28,7 @@ const About = () => {
         <div id="about" className="text-white py-1 mt-10 bg-secondary rounded-md overflow-x-hidden mx-[1rem] lg:mx-[8rem]">
             <div className="md:mx-10 ">
                 <div className="md:m-5 m-5 md:mx-5 ">
-                    <h1 className="md:text-3xl text-center text-2xl text-title font-bold">{t('about.title')}</h1>
+                    <h1 className="md:text-3xl md:text-center text-2xl text-title font-bold">{t('about.title')}</h1>
                     <p className="mt-4 md:text-lg">{t('about.paragraph1')} <br /> {t('about.paragraph2')} <br />{t('about.paragraph3')}</p>
                 </div>
                 <div className="md:flex justify-center md:mt-7 mb-5 py-5">

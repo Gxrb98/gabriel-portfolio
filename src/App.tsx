@@ -22,12 +22,14 @@ export const App = () => {
 
       <Nav />
       <div className='md:mx-[3rem] '>
-        <div className='absolute mt-5 lg:mt-8 p-0 md:gap-x-6 flex pr-4 gap-4 w-full md:w-0 justify-end md:justify-start lg:mx-[8rem] md:z-50 md:my-2 z-40 text-white'>
-          {Object.keys(languages).map((lng) => (
-            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" className="nav" onClick={() => { i18n.changeLanguage(lng) }}>
-              {languages[lng].nativeName}
-            </button>
-          ))}
+        <div className=''>
+          <div className='fixed py-3 md:py-2  md:mt-0 lg:mt-8 p-0 md:gap-x-6 flex pr-4 gap-4 w-full md:w-0 justify-end md:justify-start lg:mx-[8rem] md:ml-[2rem] md:my-2 z-40 text-white bg-main bg-opacity-80'>
+            {Object.keys(languages).map((lng) => (
+              <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" className="nav" onClick={() => { i18n.changeLanguage(lng) }}>
+                {languages[lng].nativeName}
+              </button>
+            ))}
+          </div>
         </div>
         <Home />
         <div className='md:fixed flex md:flex-col md:top-[45%] md:left-[95vw] md:text-2xl text-white absolute w-full justify-center'>

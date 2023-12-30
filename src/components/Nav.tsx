@@ -27,9 +27,9 @@ const Nav = () => {
     return <>
         {/* <div>{t('greetings')}</div>
         <button></button> */}
-        <ul className={`fixed font-sans flex md:justify-normal md:h-auto md:flex-row-reverse w-[100vw] 
-        md:gap-x-6 bg-main md:pr-[8rem] lg:pt-[1.2rem] lg:pr-[11rem] h-full text-white justify-center flex-col items-center gap-y-6
-        z-40 transition-all duration-500 ease-in bg-opacity-90 md:top-[0px] md:z-50 overflow-x-hidden
+        <ul className={`fixed font-sans flex md:justify-normal md:h-auto md:flex-row-reverse w-[100vw] bg-main bg-opacity-80
+        md:gap-x-6 md:pr-[8rem] lg:pt-[1.2rem] lg:pr-[11rem] h-full text-white justify-center flex-col items-center gap-y-6
+        z-40 transition-all duration-500 ease-in md:top-[0px] md:z-40 overflow-x-hidden 
         ${show ? 'top-[0vh] bg-main' : 'top-[-100vh]  -z-20'}`}>
             {
                 links.map((link) => (
@@ -37,7 +37,7 @@ const Nav = () => {
                 ))
             }
         </ul>
-        <span className="fixed cursor-pointer md:hidden text-white mt-5 ml-4 text-2xl z-50" onClick={displayMenu}>
+        <span className="fixed cursor-pointer md:hidden text-white mt-3 ml-4 text-2xl z-50 " onClick={displayMenu}>
             {show ? <AiOutlineClose /> : <CgMenu />}
         </span>
     </>;
