@@ -39,9 +39,9 @@ const Contact = () => {
                         <h1 >{t('contact.email')}</h1>
                     </div>
 
-                    <p onClick={copyToClipboard} className='md:text-3xl text-xl text-title hover:cursor-pointer font-bold'>gxrb98@gmail.com</p>
+                    <p onClick={copyToClipboard} className='md:text-3xl nav text-xl text-title hover:cursor-pointer font-bold'>gxrb98@gmail.com</p>
                 </div>
-                <span id='message' className='absolute'></span>
+                <span id='message' className='absolute mt-2'></span>
             </div>
 
 

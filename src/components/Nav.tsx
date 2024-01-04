@@ -24,23 +24,23 @@ const Nav = () => {
             link: '#about'
         },
     ]
-    return <>
-        {/* <div>{t('greetings')}</div>
-        <button></button> */}
-        <ul className={`fixed font-sans flex md:justify-normal md:h-auto md:flex-row-reverse w-[100vw] bg-main bg-opacity-80
+    return <nav>
+        <ul className={`fixed font-sans flex md:justify-normal md:h-auto md:flex-row-reverse w-[100vw] bg-main 
         md:gap-x-6 md:pr-[8rem] lg:pt-[1.2rem] lg:pr-[11rem] h-full text-white justify-center flex-col items-center gap-y-6
-        z-40 transition-all duration-500 ease-in md:top-[0px] md:z-40 overflow-x-hidden 
+        z-40 transition-all duration-500 ease-in md:top-[0px] md:z-40 overflow-x-hidden  backdrop-blur bg-opacity-50
         ${show ? 'top-[0vh] bg-main' : 'top-[-100vh]  -z-20'}`}>
             {
                 links.map((link) => (
-                    <li key={link.name} className="my-2"><a href={link.link} className="md:nav">{link.name}</a></li>
+                    <li key={link.name} className="my-2 text-lg"><a href={link.link} className="md:nav">{link.name}</a></li>
                 ))
             }
         </ul>
-        <span className="fixed cursor-pointer md:hidden text-white mt-3 ml-4 text-2xl z-50 " onClick={displayMenu}>
+        <span className={`${show ? 'bg-none' : 'bg-main w-full backdrop-blur bg-opacity-50'} 
+        fixed cursor-pointer md:hidden
+         text-white py-3 ml-4 text-2xl z-40 `} onClick={displayMenu}>
             {show ? <AiOutlineClose /> : <CgMenu />}
         </span>
-    </>;
+    </nav>;
 }
 
 export default Nav;
