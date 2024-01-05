@@ -9,7 +9,11 @@ import Footer from './components/Footer.tsx';
 
 export const App = () => {
 
-  const languages: any = {
+  interface Language {
+    nativeName: string;
+  }
+
+  const languages: { [key: string]: Language } = {
     en: { nativeName: 'English' },
     pt: { nativeName: 'Português' },
     es: { nativeName: 'Español' }
@@ -25,7 +29,11 @@ export const App = () => {
         <div className=''>
           <div className='fixed py-3 md:py-2  md:mt-0 lg:mt-8 p-0 md:gap-x-6 flex gap-3 w-auto ml-[3.5rem] md:justify-start lg:mx-[8rem] md:ml-[2rem] z-40 text-white'>
             {Object.keys(languages).map((lng) => (
-              <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" className="nav" onClick={() => { i18n.changeLanguage(lng) }}>
+              <button key={lng} style={{
+                fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal',
+                color: i18n.resolvedLanguage === lng ? '#878D99' : 'white'
+              }}
+                type="submit" className="nav" onClick={() => { i18n.changeLanguage(lng) }}>
                 {languages[lng].nativeName}
               </button>
             ))}
