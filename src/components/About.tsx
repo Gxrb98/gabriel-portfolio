@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react"
-import cvEs from '../pdfs/ES-CV-Gabriel.pdf';
-import cvEn from '../pdfs/EN-CV-Gabriel.pdf';
-import cvPt from '../pdfs/PT-CV-Gabriel.pdf';
+import cvEs from '../pdfs/ES-Gabriel-CV.pdf';
+import cvEn from '../pdfs/EN-Gabriel-CV.pdf';
+import cvPt from '../pdfs/PT-Gabriel-CV.pdf';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHtml5, faCss3Alt, faSquareJs, faReact, faVuejs, faGitAlt } from '@fortawesome/free-brands-svg-icons'
 
