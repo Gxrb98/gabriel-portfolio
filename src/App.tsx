@@ -27,7 +27,8 @@ export const App = () => {
       <Nav />
       <div className='md:mx-[3rem] '>
         <div className=''>
-          <div className='fixed py-3 md:py-2  md:mt-0 lg:mt-8 p-0 md:gap-x-6 flex gap-3 w-auto ml-[3.5rem] md:justify-start lg:mx-[8rem] md:ml-[2rem] z-40 text-white'>
+          <div className='fixed py-3 md:py-2  md:mt-0 lg:mt-8 p-0 md:gap-x-6 flex gap-3 w-auto ml-[3.5rem] md:justify-start lg:mx-[8rem] lg:py-0 md:ml-[2rem] z-40 text-white'>
+            <img src="GRlogo.png" alt="My personal logo" width={50} className='fixed ml-100 bg-white lg:mx-[-4rem] lg:my-[-0.5rem] lg:mt-[-1rem]' />
             {Object.keys(languages).map((lng) => (
               <button key={lng} style={{
                 fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal',
